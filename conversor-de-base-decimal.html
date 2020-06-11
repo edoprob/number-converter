@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/self-style.css">
+
+    <title>Conversor de bases</title>
+  </head>
+  <body onload="document.conversor.number.focus()">
+
+    <div class="container">
+      <div id="self-header">
+        
+      </div>
+    </div>
+
+<!-- conversor form -->
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2>Conversor de bases decimais</h2>
+        </div>
+        <div class="card-body">
+          
+          <form name="conversor" action="#">
+
+            <p>Número</p>
+            <input id="number" type="text" name="numero" placeholder="Numero a converter..." maxlength="28" size="25" onkeyup="Converter()"><br>
+            <hr>
+
+            <p>Base:</p> 
+            <select size="3" id="base" onchange="Converter()">
+              <option value="2" selected>2</option>
+              <option value="8">8</option>
+              <option value="16">16</option>
+            </select><br>
+            <hr>
+            <p>Resultado</p>
+            <p>- <span id="result"></span> - </p>
+            <hr>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/jquery.js"></script>
+    <script src="assets/popper.js"></script>
+    <script src="assets/bootstrap.js"></script>
+    <script src="assets/conversor.js"></script>
+  </body>
+</html>
