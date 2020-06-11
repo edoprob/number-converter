@@ -17,12 +17,12 @@ function Converter(){
 	while (number != 0) {
           i++;
           digit[i] = number % base;
-          number = Math.floor(number / base);  // divisão inteira, ex.: 15 / 2 = 7
+          number = Math.floor(number / base); 
         }
 
     while (i >= 0) with (document.getElementById("result")) {
     	switch (digit[i]) {
-            // Na base 16, os dígitos maiores que 10 são representados por letras:
+        
             case 10: { innerHTML += "A"; break }
             case 11: { innerHTML += "B"; break }
             case 12: { innerHTML += "C"; break }
